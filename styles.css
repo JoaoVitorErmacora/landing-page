@@ -1,0 +1,136 @@
+@font-face {
+  font-family: Poppins;
+  src: url("./fonts/Poppins-ExtraLight.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.menu {
+  background-color: #000;
+  border-bottom: solid gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  height: 100px;
+}
+
+.listas {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  height: 20px;
+}
+
+.icons {
+  color: white;
+  gap: 50px;
+}
+
+header nav a {
+  color: white;
+}
+
+header nav i {
+  color: white;
+}
+
+.imagens {
+  width: 516px;
+  height: 300px;
+  position: fixed;
+  right: 0%;
+  bottom: 15%;
+}
+
+.imagens .img {
+  height: 400px;
+  width: 400px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 52%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./images/download.png") center / cover no-repeat;
+}
+
+.cima {
+  display: flex;
+  justify-content: space-between;
+  width: 41%;
+  height: 100px;
+  top: 10;
+}
+
+.cima a {
+  color: #fff;
+}
+
+.subtitle,
+.description,
+.menu,
+.cima {
+  color: #fff;
+  font-family: Poppins;
+}
+
+.description {
+  width: 50px;
+  height: 50px;
+}
+
+.subtitle {
+  height: 1px;
+  gap: 30px;
+}
+
+.description h2 {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  margin-top: 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  justify-content: space-around;
+}
+
+.rodape {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+.card {
+  background-image: linear-gradient(#83665c, #b5a295, #46302c, #e9d8cb);
+  border-radius: 50%;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0px;
+}
